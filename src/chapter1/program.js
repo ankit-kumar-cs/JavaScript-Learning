@@ -1,10 +1,3 @@
-export const findSecondLargest = (array) => {
-	for(let i = array.length - 1; i >= 0; i--) {
-		console.log(array[i])
-	}
-	return array[0];
-}
-
 export const findSecondLargestRecursive = (array, low, high, maximumElement, currentSecondMaximum) => {
 	const mid = parseInt((low + high) / 2);
 	if(low >= high)
@@ -21,5 +14,3 @@ export const findSecondLargestRecursive = (array, low, high, maximumElement, cur
 		return currentSecondMaximum;
 	}
 }
-
-// console.log(findSecondLargestRecursive([1,2,3, 4, 5], 0, 5, -1));
