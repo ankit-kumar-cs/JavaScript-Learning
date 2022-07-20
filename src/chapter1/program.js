@@ -2,7 +2,6 @@ export const findSecondLargestRecursive = (array, low, high, maximumElement, cur
 	const mid = parseInt((low + high) / 2);
 	if(low >= high)
 		return currentSecondMaximum;
-	// console.log(low, high, maximumElement, currentSecondMaximum, array[mid]);
 	if (array[mid] === maximumElement && currentSecondMaximum < maximumElement && currentSecondMaximum === -1) 
 		return findSecondLargestRecursive(array, low, mid - 1, maximumElement, currentSecondMaximum);
 	if (array[mid] === maximumElement && currentSecondMaximum < maximumElement && currentSecondMaximum != -1) 
