@@ -4,7 +4,7 @@ function draw() {
 		const ctx = canvas.getContext("2d");
 		
 		ctx.beginPath();
-    	ctx.arc(75, 75, 50, 0, Math.PI * 2); // Outer circle
+    	ctx.arc(75, 75, 50, 0, Math.PI * 2);
     	ctx.moveTo(115, 75);
 		ctx.arc(75, 75, 40, 0, Math.PI); 
 		ctx.moveTo(60, 60);
